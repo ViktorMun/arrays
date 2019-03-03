@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "arrays", "arrays\arrays.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysLib", "ArraysLib\ArraysLib.csproj", "{92DE836A-ABD5-4210-8704-58A5BBBC6F9E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twoVArray", "twoVArray\twoVArray.csproj", "{6705DB2A-6797-4C5E-8C3A-1F9E6DC4CF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "twoArrayLib", "ClassLibrary1\twoArrayLib.csproj", "{A379E2ED-DC61-4511-A738-5D3A7A58AAA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{92DE836A-ABD5-4210-8704-58A5BBBC6F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92DE836A-ABD5-4210-8704-58A5BBBC6F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92DE836A-ABD5-4210-8704-58A5BBBC6F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6705DB2A-6797-4C5E-8C3A-1F9E6DC4CF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6705DB2A-6797-4C5E-8C3A-1F9E6DC4CF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6705DB2A-6797-4C5E-8C3A-1F9E6DC4CF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6705DB2A-6797-4C5E-8C3A-1F9E6DC4CF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A379E2ED-DC61-4511-A738-5D3A7A58AAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A379E2ED-DC61-4511-A738-5D3A7A58AAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A379E2ED-DC61-4511-A738-5D3A7A58AAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A379E2ED-DC61-4511-A738-5D3A7A58AAA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
