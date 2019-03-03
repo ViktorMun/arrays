@@ -13,30 +13,47 @@ namespace twoArrayLib
         public int[,] arr;
         public void WriteText()
         {
-   
 
-            string[] text = new string[arr.Length];
-            int z = 0;
-            for (int i = 0; i <arr.GetLength(0); i++)
+            try
             {
-                for (int j = 0; j < arr.GetLength(1); j++)
-                    text[z] = Convert.ToString(arr[i, j]);
-                z++;
+
+                string[] text = new string[arr.Length];
+                int z = 0;
+                for (int i = 0; i < arr.GetLength(0); i++)
+
+                {
+
+                    for (int j = 0; j < arr.GetLength(1); j++)
+                        text[z] = Convert.ToString(arr[i, j]);
+                    z++;
+                }
+
+
+                File.WriteAllLines(@"C:\1.txt", text);
             }
 
-           
-            File.WriteAllLines(@"C:\1.txt", text);
-            
+            catch (Exception exc)
+            {
+                Console.WriteLine(exc.Message);
+            }
+
         }
-               
-    
 
 
 
-public string ReadText()
+
+
+        public string ReadText()
         {
-            string data = File.ReadAllText(@"C:\1.txt");
-            return data;
+            try
+            {
+                string data = File.ReadAllText(@"C:\1.txt");
+                return data;
+            }
+            catch (Exception exc)
+            {
+              return exc.Message;
+            }
         }
 
       
