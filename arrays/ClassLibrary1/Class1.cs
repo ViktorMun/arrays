@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace twoArrayLib
 {
@@ -10,8 +11,35 @@ namespace twoArrayLib
     {
 
         public int[,] arr;
+        public void WriteText()
+        {
+   
 
+            string[] text = new string[arr.Length];
+            int z = 0;
+            for (int i = 0; i <arr.GetLength(0); i++)
+            {
+                for (int j = 0; j < arr.GetLength(1); j++)
+                    text[z] = Convert.ToString(arr[i, j]);
+                z++;
+            }
+
+           
+            File.WriteAllLines(@"C:\1.txt", text);
+            
+        }
+               
     
+
+
+
+public string ReadText()
+        {
+            string data = File.ReadAllText(@"C:\1.txt");
+            return data;
+        }
+
+      
 
         public Arrayoftwo(int n, int min, int max)
         {

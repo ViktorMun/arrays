@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using twoArrayLib;
-
+using System.IO;
 
 
 namespace twoVArray
@@ -21,7 +21,12 @@ namespace twoVArray
             Console.WriteLine(arr.SumMax);
             Console.WriteLine(arr.Max);
             Console.WriteLine(arr.Min);
+            Console.WriteLine(arr.ReadText());
+
+            arr.WriteText();
+              
             Console.ReadKey();
+
         }
     }
 
