@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{389B534A-C822-44BF-9647-5399CBC749BE}</ProjectGuid>
+    <ProjectGuid>{6705DB2A-6797-4C5E-8C3A-1F9E6DC4CF7E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>arrays</RootNamespace>
-    <AssemblyName>arrays</AssemblyName>
+    <RootNamespace>twoVArray</RootNamespace>
+    <AssemblyName>twoVArray</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ArraysLib\ArraysLib.csproj">
-      <Project>{92de836a-abd5-4210-8704-58a5bbbc6f9e}</Project>
-      <Name>ArraysLib</Name>
+    <ProjectReference Include="..\ClassLibrary1\twoArrayLib.csproj">
+      <Project>{a379e2ed-dc61-4511-a738-5d3a7a58aaa3}</Project>
+      <Name>twoArrayLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
